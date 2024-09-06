@@ -1,0 +1,101 @@
+.container4 {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header4 {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Set to white for a clean look */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.header4 h1 {
+    margin: 0;
+    font-size: 36px; /* Increase font size */
+    color: #333;
+    font-weight: bold;
+}
+
+.header4 p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.info-section4 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    flex: 1 1 45%; /* 2 per row on mobile */
+}
+
+.icon4 {
+    background-color: #3AAFA9;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.icon4 img {
+    max-width: 60%; /* Adjust size as needed */
+    max-height: 60%; /* Adjust size as needed */
+}
+
+.details4 p {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: #070707;
+    font-weight: bold;
+    text-align: center;
+}
+
+#blur4 {
+    color: #333333d4;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    .info-box4 {
+        flex: 1 1 calc(50% - 20px); /* 2 per row with space on mobile */
+    }
+    .icon4 img {
+        max-width: 80%; /* Adjust size as needed */
+        max-height: 80%; /* Adjust size as needed */
+    }
+    .icon4 {
+        background-color: #3AAFA9;
+        border-radius: 230%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75px;
+        height: 75px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .info-box4 {
+        flex: 1 1 calc(25% - 20px); /* 4 per row with space on desktop */
+    }
+}

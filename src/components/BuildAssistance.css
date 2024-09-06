@@ -1,0 +1,177 @@
+.build-assistance-container {
+  text-align: center;
+  padding: 30px 150px 30px 200px;
+font-weight: bolder;
+font-size: 25px;  
+}
+.build-assistance-container p button {
+  font-weight: bolder;
+  font-size: 25px; 
+}
+
+#head {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  height: 450px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 0; /* Ensure there is no margin between the image and content */
+}
+
+
+
+.card-content {
+  
+  background-color: #3AAFA9;
+  height: 150px; /* Set height to fill the remaining card space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  background-color: #FEFFFF;
+  width:150px;
+  position:absolute;
+  top:280px;
+  left:190px;
+}
+#loc{
+  position: absolute;
+  top:350px;
+  font-weight: normal;
+  font-size:18px;
+}
+.card-content p {
+  margin: 10px 0;
+  color:#FEFFFF;
+  font-weight: bold;
+  font-size:20px;
+  position: absolute;
+  top:325px;
+
+}
+
+.know-more-button {
+  background-color: #3AAFA9;
+  color: white;
+  border:solid 1px #FEFFFF;
+  padding: 2px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 5px;
+  left:185px;
+  width: 30%;
+}
+
+.know-more-button:hover {
+  background-color: #2B7A78;
+}
+#view{
+  text-decoration: none;
+    color:black;
+  
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+  }
+
+  .card {
+      width: 600px;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .build-assistance-container {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  #head {
+    font-size: 24px;
+  }
+
+  .card {
+    max-width: 100%;
+    width:800px;
+    height:400px;
+    position: relative;
+  }
+
+  .card-image {
+    height: 200px;
+  }
+
+  .card-content {
+    height: 200px;
+    padding: 15px;
+  }
+
+  .card-content h3 {
+    font-size: 16px;
+    top: 170px;
+    left:80px;
+  }
+#pickup{
+  margin: 20px auto;
+  font-size: 24px;
+  
+  font-weight: bolder;
+  text-align: center;
+}
+  .card-content p {
+    top: 230px;
+    font-size: 16px;
+  }
+
+  #loc {
+    top: 280px;
+    font-size: 16px;
+  }
+
+  .know-more-button {
+    top:320px;
+    width: 50%;
+    left:80px;
+  }
+}
